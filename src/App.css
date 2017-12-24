@@ -20,3 +20,13 @@ h1 {
 .message .value {
   font-style: italic;
 }
+
+.root {
+  width: 500px;
+  height: 500px;
+  background-color: grey;
+}
+
+.clicked {
+  color: red;
+}
