@@ -5,20 +5,20 @@ class About extends Component {
   render(){
     return(
       <div className="component text-center">
-          <img src="https://lewisyoul.github.io/images/profile_pic_square.jpg" className="headshot-size img-responsive center-block"></img>
-          <h1><strong><span>[</span> Lewis Youl <span>]</span></strong></h1>
-            <div class="row">
-          <div class="col-md-6 padding-about">
+        <img src="https://lewisyoul.github.io/images/profile_pic_square.jpg" className="headshot-size img-responsive"></img>
+        <h1><strong><span>[</span> Lewis Youl <span>]</span></strong></h1>
+        <hr></hr>
+        <div className="row">
+          <div className="col-md-10 col-sm-offset-1 text-left">
             <h3><strong>Who am I?</strong></h3>
             <hr></hr>
-            <p>Before embarking on a career in web development I worked as a scientist studying the microbiota of animals. Using the analysis program R prompted me to delve farther into the coding depths. I have since spent some time honing my skills in development, pecifically through learning Ruby in preparation for Makers Academy which I will begin in October.</p>
+            <p>Full stack web developer currently studying at Makers Academy, one of the most selective and rigorous development bootcamps in London.</p>
+            <hr></hr>
+            <p>Having previously worked as a Laboratory Research Scientist I bring the analytical, methodical thinking required in a scientific environment into the code that I write. I enjoy producing Test Driven code that is clean, clear and reproducible. This is with a view to producing a more easily maintainable codebase.</p>
+            <hr></hr>
           </div>
-          <div class="col-md-6 padding-about">
-            <p>Now I find things like this funny...</p>
-            <img src="https://i2.wp.com/s3.amazonaws.com/production-wordpress-assets/blog/wp-content/uploads/2015/03/3.png?resize=360%2C299&ssl=1" class="img-responsive center-block"></img>
-          </div>
+        </div>
       </div>
-    </div>
     );
   }
 }

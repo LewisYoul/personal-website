@@ -7,24 +7,37 @@ h1 {
   font-size: 5rem;
 }
 
+hr {
+  width: 50%;
+}
+
+p {
+  font-size: 20px;
+  line-height: 150%;
+}
+
 span {
   color: #C0C0C0
 }
 
 .component {
   padding-top: 50px;
+  padding-bottom: 50px;
   background-color: white;
+  border-radius: 5px;
 }
 
 .parent {
   margin-top: 75px;
-  max-width: 960px;
+  margin-bottom: 75px;
+  max-width: 1000px;
 }
 
 .headshot-size {
   width: 350px;
   border-radius: 50%;
   border-color: white;
+  margin: auto;
 }
 
 .container {
@@ -46,10 +59,19 @@ span {
   font-style: italic;
 }
 
-/* .root {
-  background-color: grey;
-} */
+.root {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 .clicked {
   background-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-box-shadow: 5px 0px 6px -3px #888;
+-moz-box-shadow: 5px 0px 6px -3px #888;
+box-shadow: 5px 0px 6px -3px #888;
+}
+
+.overflow-div {
+  overflow: hidden;
 }
