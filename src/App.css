@@ -1,5 +1,30 @@
+body {
+  background-color: #dbdbdb;
+}
+
 h1 {
-  font-size: 4rem;
+  font-family: 'Roboto Slab', serif;
+  font-size: 5rem;
+}
+
+span {
+  color: #C0C0C0
+}
+
+.component {
+  padding-top: 50px;
+  background-color: white;
+}
+
+.parent {
+  margin-top: 75px;
+  max-width: 960px;
+}
+
+.headshot-size {
+  width: 350px;
+  border-radius: 50%;
+  border-color: white;
 }
 
 .container {
@@ -21,12 +46,10 @@ h1 {
   font-style: italic;
 }
 
-.root {
-  width: 500px;
-  height: 500px;
+/* .root {
   background-color: grey;
-}
+} */
 
 .clicked {
-  color: red;
+  background-color: white;
 }

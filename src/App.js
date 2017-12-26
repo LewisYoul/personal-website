@@ -3,23 +3,27 @@ import './App.css';
 import Blog from './blog/blog.js'
 import Profile from './profile/profile.js'
 import About from './about/about.js'
+import Skills from './skills/skills.js'
+import Portfolio from './portfolio/portfolio.js'
+import Contact from './contact/contact'
 
 class App extends React.Component {
   constructor(props){
   super(props);
   this.state = {
-    showAbout: false,
-    showBlog: false,
-    showProfile: false,
+    showAbout: true,
+    showSkills: false,
+    showPortfolio: false,
+    showContact: false,
     clicked: 'clicked',
     unclicked: 'unclicked'
   }
-  this.showBlog = this.showBlog.bind(this)
-  this.showProfile = this.showProfile.bind(this)
   this.resetStatesToFalse = this.resetStatesToFalse.bind(this)
   this.setClass = this.setClass.bind(this)
   this.showAbout = this.showAbout.bind(this)
-  this.showComponent = this.showComponent.bind(this)
+  this.showSkills = this.showSkills.bind(this)
+  this.showPortfolio = this.showPortfolio.bind(this)
+  this.showContact = this.showContact.bind(this)
 }
 
 // I want to refactor showBlog and showProfile into one method where an argument is passed in
@@ -38,25 +42,33 @@ class App extends React.Component {
     );
   }
 
-  showBlog() {
+  showSkills() {
     this.resetStatesToFalse()
     this.setState(
-      { showBlog: true }
+      { showSkills: true }
     );
   }
 
-  showProfile() {
+  showPortfolio() {
     this.resetStatesToFalse()
     this.setState(
-      { showProfile: true }
+      { showPortfolio: true }
+    )
+  }
+
+  showContact() {
+    this.resetStatesToFalse()
+    this.setState(
+      { showContact: true }
     )
   }
 
   resetStatesToFalse() {
     this.setState({
-      showBlog: false,
-      showProfile: false,
-      showAbout: false
+      showSkills: false,
+      showAbout: false,
+      showPortfolio: false,
+      showContact: false
        }
     );
   }
@@ -73,33 +85,24 @@ class App extends React.Component {
     return (
       <div className="container-fluid">
         <div className="row text-center">
-          <div className="col-sm-2">
-            <h2 onClick={ this.showAbout } >About</h2>
+          <div onClick={ this.showAbout } className={ this.setClass(this.state.showAbout) + " col-sm-offset-2 col-sm-2" }>
+            <h2>About</h2>
           </div>
-          <div className="col-sm-2">
+          <div onClick={ this.showSkills } className={ this.setClass(this.state.showSkills) + " col-sm-2" }>
             <h2>Skills</h2>
           </div>
-          <div className="col-sm-2">
+          <div onClick={ this.showPortfolio } className={ this.setClass(this.state.showPortfolio) + " col-sm-2" }>
             <h2>Portfolio</h2>
           </div>
-          <div className="col-sm-2">
+          <div onClick={ this.showContact } className={ this.setClass(this.state.showContact) + " col-sm-2" }>
             <h2>Contact</h2>
           </div>
-          <div className="col-sm-2">
-            <h2>Blog</h2>
-          </div>
-          <div className="col-sm-2">
-            <h2>CV</h2>
-          </div>
-
         </div>
-        <h1 className={ this.setClass(this.state.showBlog) } onClick={ this.showBlog }>Blog</h1>
-        <h1 className={ this.setClass(this.state.showProfile) } onClick={ this.showProfile}>Profile</h1>
         <div className="root">
-          {console.log(this.state.showAbout)}
           { this.state.showAbout ? <About /> : null }
-          { this.state.showBlog ? <Blog /> : null }
-          { this.state.showProfile ? <Profile /> : null }
+          { this.state.showSkills ? <Skills /> : null }
+          { this.state.showPortfolio ? <Portfolio /> : null }
+          { this.state.showContact ? <Contact /> : null }
         </div>
       </div>
     )
