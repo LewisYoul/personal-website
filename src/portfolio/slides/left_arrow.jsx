@@ -2,7 +2,7 @@ import React from 'react'
 
 const leftArrow = (props) => {
   return(
-    <div>
+    <div onClick={ props.previousSlide }>
       <i class="fa fa-chevron-left" aria-hidden="true"></i>
     </div>
   )

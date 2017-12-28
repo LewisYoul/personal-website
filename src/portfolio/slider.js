@@ -32,6 +32,8 @@ export default class Slider extends Component {
       <div className="slider">
         { this.state.slideCount === 1 ? <SlideOne /> : null }
         { this.state.slideCount === 2 ? <SlideTwo /> : null }
+        <RightArrow nextSlide={ this.nextSlide } />
+        <LeftArrow previousSlide={ this.previousSlide } />
       </div>
     );
   }

@@ -24,6 +24,10 @@ span {
   color: #C0C0C0
 }
 
+.portfolio-image {
+  max-width: 90%;
+}
+
 .skill-logo {
   padding-top: 35px;
   width: 120px;
