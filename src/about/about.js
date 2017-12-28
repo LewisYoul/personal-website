@@ -5,7 +5,7 @@ class About extends Component {
   render(){
     return(
       <div className="component text-center">
-        <img src="https://lewisyoul.github.io/images/profile_pic_square.jpg" className="headshot-size img-responsive"></img>
+        <img src={require("../images/profile_pic_square.jpg")} className="headshot-size img-responsive"></img>
         <h1><strong><span>[</span> Lewis Youl <span>]</span></strong></h1>
         <hr></hr>
         <div className="row">

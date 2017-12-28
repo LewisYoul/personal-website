@@ -31,10 +31,20 @@ class Skills extends Component {
         <div className="row">
           <div className="col-sm-10 col-sm-offset-1 text-left">
             <div className="col-sm-6">
-              <img className="skill-logo center-block" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png"></img>
+              <img className="skill-logo center-block" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"></img>
             </div>
-            <div className="col-sm-6 text-center">
-              <h2><strong>Node JS</strong></h2>
+            <div className="col-sm-6">
+              <img className="skill-logo center-block" src="https://vignette.wikia.nocookie.net/howtoprogram/images/a/a9/CSS3.png/revision/latest/scale-to-width-down/342?cb=20130422012035"></img>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-10 col-sm-offset-1 text-left">
+            <div className="col-sm-6">
+              <img className="skill-logo center-block" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/240px-Unofficial_JavaScript_logo_2.svg.png"></img>
+            </div>
+            <div className="col-sm-6">
+              <img className="skill-logo center-block" src="https://i.pinimg.com/564x/30/8a/16/308a16d88daefd38eb305755fc4d9794--logo-google-stickers.jpg"></img>
             </div>
           </div>
         </div>
