@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
-import Blog from './blog/blog.js'
+import Blog from './blog/blog'
 import Profile from './profile/profile.js'
 import About from './about/about.js'
 import Skills from './skills/skills.js'
 import Portfolio from './portfolio/portfolio.js'
-import Contact from './contact/contact'
 
 class App extends React.Component {
   constructor(props){
@@ -14,7 +13,7 @@ class App extends React.Component {
     showAbout: true,
     showSkills: false,
     showPortfolio: false,
-    showContact: false,
+    showBlog: false,
     clicked: 'clicked',
     unclicked: 'unclicked'
   }
@@ -23,7 +22,7 @@ class App extends React.Component {
   this.showAbout = this.showAbout.bind(this)
   this.showSkills = this.showSkills.bind(this)
   this.showPortfolio = this.showPortfolio.bind(this)
-  this.showContact = this.showContact.bind(this)
+  this.showBlog = this.showBlog.bind(this)
 }
 
 // I want to refactor showBlog and showProfile into one method where an argument is passed in
@@ -56,10 +55,10 @@ class App extends React.Component {
     )
   }
 
-  showContact() {
+  showBlog() {
     this.resetStatesToFalse()
     this.setState(
-      { showContact: true }
+      { showBlog: true }
     )
   }
 
@@ -68,7 +67,7 @@ class App extends React.Component {
       showSkills: false,
       showAbout: false,
       showPortfolio: false,
-      showContact: false
+      showBlog: false
        }
     );
   }
@@ -94,15 +93,15 @@ class App extends React.Component {
           <div onClick={ this.showPortfolio } className={ this.setClass(this.state.showPortfolio) + " col-sm-2" }>
             <h2>Portfolio</h2>
           </div>
-          <div onClick={ this.showContact } className={ this.setClass(this.state.showContact) + " col-sm-2" }>
-            <h2>Contact</h2>
+          <div onClick={ this.showBlog } className={ this.setClass(this.state.showBlog) + " col-sm-2" }>
+            <h2>Blog</h2>
           </div>
         </div>
         <div className="root">
           { this.state.showAbout ? <About /> : null }
           { this.state.showSkills ? <Skills /> : null }
           { this.state.showPortfolio ? <Portfolio /> : null }
-          { this.state.showContact ? <Contact /> : null }
+          { this.state.showBlog ? <Blog /> : null }
         </div>
       </div>
     )
