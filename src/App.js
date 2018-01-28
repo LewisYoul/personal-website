@@ -93,7 +93,7 @@ class App extends React.Component {
           <div id="portfolio" onClick={ this.showPortfolio } className={ this.setClass(this.state.showPortfolio) + " col-sm-2" }>
             <h2>Portfolio</h2>
           </div>
-          <div onClick={ this.showBlog } className={ this.setClass(this.state.showBlog) + " col-sm-2" }>
+          <div id="blog" onClick={ this.showBlog } className={ this.setClass(this.state.showBlog) + " col-sm-2" }>
             <h2>Blog</h2>
           </div>
         </div>

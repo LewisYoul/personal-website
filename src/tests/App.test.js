@@ -28,6 +28,9 @@ describe('App', () => {
     it("contains a <div> with the id 'portfolio'", () => {
       expect(wrapper.find('#portfolio').length).toEqual(1)
     });
+    it("contains a <div> with the id 'blog'", () => {
+      expect(wrapper.find('#blog').length).toEqual(1)
+    });
   });
 
 });
