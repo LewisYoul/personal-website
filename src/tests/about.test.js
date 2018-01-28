@@ -9,7 +9,6 @@ let wrapper, instance;
 
 beforeEach(() => {
   wrapper = shallow(<About />);
-  instance = wrapper.instance()
 });
 
 describe('About', () => {
