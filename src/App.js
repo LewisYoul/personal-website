@@ -84,7 +84,7 @@ class App extends React.Component {
     return (
       <div className="container-fluid">
         <div className="row text-center">
-          <div onClick={ this.showAbout } className={ this.setClass(this.state.showAbout) + " col-sm-offset-2 col-sm-2" }>
+          <div id="about" onClick={ this.showAbout } className={ this.setClass(this.state.showAbout) + " col-sm-offset-2 col-sm-2" }>
             <h2>About</h2>
           </div>
           <div onClick={ this.showSkills } className={ this.setClass(this.state.showSkills) + " col-sm-2" }>
