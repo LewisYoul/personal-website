@@ -24,13 +24,16 @@ class Blog extends Component {
   render(){
     const allPosts = this.state.posts.map((post, index) => {
       return(
-        <h1>{post.title}</h1>
+        <div key={post.index}>
+          <a href={post.link}><h2>{post.title}</h2></a>
+          <h5>{String(new Date(post.created)).split("G")[0]}</h5>
+        </div>
       )
     });
 
     return(
       <div className="component text-center">
-        <h1><strong><span>[</span> Contact <span>]</span></strong></h1>
+        <h1><strong><span>[</span> Blog <span>]</span></strong></h1>
         <hr></hr>
         <div className="row">
           <div className="col-md-10 col-sm-offset-1 text-left">
