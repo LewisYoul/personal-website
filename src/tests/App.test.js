@@ -55,4 +55,12 @@ describe('App', () => {
     });
   });
 
+  describe('#showAbout', () => {
+    it("Changes the state of 'showAbout' to be 'true'", () => {
+      instance.resetStatesToFalse()
+      instance.showAbout()
+      expect(instance.state.showAbout).toEqual(true)
+    });
+  });
+
 });
