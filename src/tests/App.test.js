@@ -38,8 +38,11 @@ describe('App', () => {
     it('showAbout is set to true', () => {
       expect(instance.state.showAbout).toEqual(true)
     });
-    it('showSkills is set to true', () => {
+    it('showSkills is set to false', () => {
       expect(instance.state.showSkills).toEqual(false)
+    });
+    it('showPortfolio is set to false', () => {
+      expect(instance.state.showPortfolio).toEqual(false)
     });
   });
 
