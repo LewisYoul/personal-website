@@ -6,10 +6,11 @@ import App from '../App';
 
 configure({ adapter: new Adapter() });
 
-let wrapper;
+let wrapper, instance;
 
 beforeEach(() => {
   wrapper = shallow(<App />);
+  instance = wrapper.instance()
 });
 
 describe('App', () => {
@@ -30,6 +31,12 @@ describe('App', () => {
     });
     it("contains a <div> with the id 'blog'", () => {
       expect(wrapper.find('#blog').length).toEqual(1)
+    });
+  });
+
+  describe('Initial state', () => {
+    it('showAbout is set to true', () => {
+      expect(instance.state.showAbout).toEqual(true)
     });
   });
 
