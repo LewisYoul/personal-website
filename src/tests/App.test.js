@@ -63,4 +63,11 @@ describe('App', () => {
     });
   });
 
+  describe('#showSkills', () => {
+    it("Changes the state of 'showSkills' to be 'true'", () => {
+      instance.showSkills()
+      expect(instance.state.showSkills).toEqual(true)
+    });
+  });
+
 });
