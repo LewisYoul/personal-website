@@ -84,4 +84,26 @@ describe('App', () => {
     });
   });
 
+  describe('#resetStatesToFalse', () => {
+    it("Changes the state of 'showBlog' to be 'false'", () => {
+      instance.showBlog()
+      instance.resetStatesToFalse()
+      expect(instance.state.showBlog).toEqual(false)
+    });
+    it("Changes the state of 'showAbout' to be 'false'", () => {
+      instance.resetStatesToFalse()
+      expect(instance.state.showAbout).toEqual(false)
+    });
+    it("Changes the state of 'showSkills' to be 'false'", () => {
+      instance.showSkills()
+      instance.resetStatesToFalse()
+      expect(instance.state.showSkills).toEqual(false)
+    });
+    it("Changes the state of 'showPortfolio' to be 'false'", () => {
+      instance.showPortfolio()
+      instance.resetStatesToFalse()
+      expect(instance.state.showPortfolio).toEqual(false)
+    });
+  });
+
 });
