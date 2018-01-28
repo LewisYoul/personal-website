@@ -47,6 +47,12 @@ describe('App', () => {
     it('showBlog is set to false', () => {
       expect(instance.state.showBlog).toEqual(false)
     });
+    it("unclicked returns the string 'unclicked'", () => {
+      expect(instance.state.unclicked).toEqual('unclicked')
+    });
+    it("clicked returns the string 'clicked'", () => {
+      expect(instance.state.clicked).toEqual('clicked')
+    });
   });
 
 });
