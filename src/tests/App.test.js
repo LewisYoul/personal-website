@@ -77,4 +77,11 @@ describe('App', () => {
     });
   });
 
+  describe('#showBlog', () => {
+    it("Changes the state of 'showBlog' to be 'true'", () => {
+      instance.showBlog()
+      expect(instance.state.showBlog).toEqual(true)
+    });
+  });
+
 });
