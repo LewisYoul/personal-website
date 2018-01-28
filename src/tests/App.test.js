@@ -44,6 +44,9 @@ describe('App', () => {
     it('showPortfolio is set to false', () => {
       expect(instance.state.showPortfolio).toEqual(false)
     });
+    it('showBlog is set to false', () => {
+      expect(instance.state.showBlog).toEqual(false)
+    });
   });
 
 });
