@@ -38,6 +38,9 @@ describe('App', () => {
     it('showAbout is set to true', () => {
       expect(instance.state.showAbout).toEqual(true)
     });
+    it('showSkills is set to true', () => {
+      expect(instance.state.showSkills).toEqual(false)
+    });
   });
 
 });
