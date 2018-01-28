@@ -17,52 +17,46 @@ class App extends React.Component {
     clicked: 'clicked',
     unclicked: 'unclicked'
   }
-  this.resetStatesToFalse = this.resetStatesToFalse.bind(this)
-  this.setClass = this.setClass.bind(this)
-  this.showAbout = this.showAbout.bind(this)
-  this.showSkills = this.showSkills.bind(this)
-  this.showPortfolio = this.showPortfolio.bind(this)
-  this.showBlog = this.showBlog.bind(this)
 }
 
 // I want to refactor showBlog and showProfile into one method where an argument is passed in
 
-  showComponent(component) {
+  showComponent = (component) => {
     this.resetStatesToFalse()
     this.setState(
       { component: true }
     );
   }
 
-  showAbout() {
+  showAbout = () => {
     this.resetStatesToFalse()
     this.setState(
       { showAbout: true }
     );
   }
 
-  showSkills() {
+  showSkills = () => {
     this.resetStatesToFalse()
     this.setState(
       { showSkills: true }
     );
   }
 
-  showPortfolio() {
+  showPortfolio = () => {
     this.resetStatesToFalse()
     this.setState(
       { showPortfolio: true }
     )
   }
 
-  showBlog() {
+  showBlog = () => {
     this.resetStatesToFalse()
     this.setState(
       { showBlog: true }
     )
   }
 
-  resetStatesToFalse() {
+  resetStatesToFalse = () => {
     this.setState({
       showSkills: false,
       showAbout: false,
@@ -72,7 +66,7 @@ class App extends React.Component {
     );
   }
 
-  setClass(content) {
+  setClass = (content) => {
     if (content) {
       return this.state.clicked
     } else {
