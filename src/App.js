@@ -21,12 +21,12 @@ class App extends React.Component {
 
 // I want to refactor showBlog and showProfile into one method where an argument is passed in
 
-  showComponent = (component) => {
-    this.resetStatesToFalse()
-    this.setState(
-      { component: true }
-    );
-  }
+  // showComponent = (component) => {
+  //   this.resetStatesToFalse()
+  //   this.setState(
+  //     { component: true }
+  //   );
+  // }
 
   showAbout = () => {
     this.resetStatesToFalse()
