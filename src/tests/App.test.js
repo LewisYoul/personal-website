@@ -70,4 +70,11 @@ describe('App', () => {
     });
   });
 
+  describe('#showPortfolio', () => {
+    it("Changes the state of 'showPortfolio' to be 'true'", () => {
+      instance.showPortfolio()
+      expect(instance.state.showPortfolio).toEqual(true)
+    });
+  });
+
 });
